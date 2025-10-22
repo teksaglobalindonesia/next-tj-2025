@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p>Hello world</p>;
+  return <div className="bg-brand-primary p-8 text-neutral-grey-blue">Hello</div>;
 }
