@@ -1,5 +1,5 @@
 export default function Page() {
-  return 
-    <Header />
-  
+  return (
+    <div className="bg-brand-secondary p-8 text-neutral-white"> Dashboard Atha</div>
+  )
 }
