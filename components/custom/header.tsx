@@ -2,7 +2,7 @@
 export default function Header() {
     return(
       <div className="flex flex-row bg-neutral-silver h-[84px] px-[104px] items-center">
-        <img src="/logo.png" alt="" className="w-[154px] h-[24px]"/>
+        <img src="/Logo.png" alt="" className="w-[154px] h-[24px]"/>
         <div className="flex flex-row flex-1 justify-center items-center gap-8">
            <p><a href="" className="font-inter text-[16px]">Home</a></p>
            <p><a href="" className="font-inter text-[16px]">Service</a></p>
