@@ -5,9 +5,11 @@ export default function Hero() {
         <h1 className="text-[48px] font-bold text-dgray leading-tight mb-4">
           Lessons and insights <span className="text-green-600">from 8 years</span>
         </h1>
+
         <p className="text-gray-600 mt-4 mb-6">
           Where to grow your business as a photographer: site or social media?
         </p>
+
         <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-sm">
           Register
         </button>
@@ -15,8 +17,8 @@ export default function Hero() {
 
       <div className="mt-10 md:mt-0">
         <img
-          src="/illustration.png"
-          alt="illustration"
+          src="/Illustration.png"
+          alt=""
           className="w-[391px] h-[407px]"
         />
       </div>
