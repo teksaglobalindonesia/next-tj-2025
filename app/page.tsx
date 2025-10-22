@@ -1,5 +1,9 @@
+import Header from "../components/custom/header";
+
 export default function Page() {
   return (
-    <div className="bg-brand-secondary p-8 text-neutral-white"> Dashboard Atha</div>
+      <header>
+        <Header />
+      </header>
   )
 }
