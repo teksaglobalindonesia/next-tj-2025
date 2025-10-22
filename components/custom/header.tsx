@@ -1,7 +1,7 @@
 export default function Header() {
     return (
         <div className="flex flex-row bg-neutral-silver h-[84px] px-[105px] items-center" >
-        <img src="/logo.png" className="w-[154px] h-[24px]"/>
+        <img src="/logo.png" className="w-[154px] h-[24px]" alt=""/>
         <div className="flex flex-row flex-1 justify-center items-center gap-8">
             <p className="font-inter text-[16px]">Home</p>
             <p className="font-inter text-[16px]">Service</p>
