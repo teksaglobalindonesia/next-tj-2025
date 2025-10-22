@@ -1,6 +1,6 @@
 export default function ClientsSection() {
   return (
-    <section className="flex flex-col items-center justify-center bg-white px-[104px] py-[80px]">
+    <section className="flex flex-col items-center justify-center bg-white px-[104px] py-[40px]">
       
       <div className="flex flex-col items-center text-center gap-2 mb-10">
         <h2 className="text-[44px] font-inter font-semibold text-neutral-dgrey">Our Clients</h2>
