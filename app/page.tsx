@@ -4,6 +4,7 @@ import Client from "../components/custom/clients";
 import Community from "../components/custom/community";
 import Spending from "../components/custom/spending";
 import Achievement from "../components/custom/achievement";
+import Tutorial from "../components/custom/tutorial"
 
 export default function Page() {
   return (
@@ -14,6 +15,7 @@ export default function Page() {
       <Community />
       <Spending />
       <Achievement />
+      <Tutorial />
     </main>
   )
 }

@@ -10,14 +10,14 @@ export default function Achievement() {
                 <div className="flex flex-row justify-between w-[255px] h-[60px] gap-[16]">
                    <img src="member-achievement.png" className=" w-[48px] h-[48px] my-[6px]" alt=""/>
                    <div className="flex flex-col w-[191px] h-[60px]">
-                    <h4 className="w-[191px] h-[36px] text-bold font-inter text-[28px] text-neutral-dgrey">2,245,341</h4>
+                    <h4 className="w-[191px] h-[36px] font-bold font-inter text-[28px] text-neutral-dgrey">2,245,341</h4>
                     <p className="w-[191px] h-[24px] font-inter text-neutral-grey text-[16px]">Members</p>
                    </div>
                 </div>
                 <div className="flex flex-row justify-between w-[255px] h-[60px] gap-[16]">
                    <img src="clubs-achievement.png" className=" w-[48px] h-[48px] my-[6px]" alt=""/>
                    <div className="flex flex-col w-[191px] h-[60px]">
-                    <h4 className="w-[191px] h-[36px] text-bold font-inter text-neutral-dgrey text-[28px]">46,328</h4>
+                    <h4 className="w-[191px] h-[36px] font-bold font-inter text-neutral-dgrey text-[28px]">46,328</h4>
                     <p className="w-[191px] h-[24px] font-inter text-neutral-grey text-[16px]">Clubs</p>
                    </div>
                 </div>
@@ -26,14 +26,14 @@ export default function Achievement() {
                 <div className="flex flex-row justify-between w-[255px] h-[60px] gap-[16]">
                    <img src="event-achievement.png" className=" w-[48px] h-[48px] my-[6px]" alt=""/>
                    <div className="flex flex-col w-[191px] h-[60px]">
-                    <h4 className="w-[191px] h-[36px] text-bold font-inter text-[28px]">828,867</h4>
+                    <h4 className="w-[191px] h-[36px] font-bold font-inter text-[28px]">828,867</h4>
                     <p className="w-[191px] h-[24px] font-inter text-neutral-grey text-[16px]">Event Bookings</p>
                    </div>
                 </div>
                 <div className="flex flex-row justify-between w-[255px] h-[60px] gap-[16]">
                    <img src="payment-achievement.png" className=" w-[48px] h-[48px] my-[6px]" alt=""/>
                    <div className="flex flex-col w-[191px] h-[60px]">
-                    <h4 className="w-[191px] h-[36px] text-bold font-inter text-[28px]">1,926,436</h4>
+                    <h4 className="w-[191px] h-[36px] font-bold font-inter text-[28px]">1,926,436</h4>
                     <p className="w-[191px] h-[24px] font-inter text-neutral-grey text-[16px]">Payments</p>
                    </div>
                 </div>
