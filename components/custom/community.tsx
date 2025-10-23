@@ -30,7 +30,7 @@ export default function Community() {
   ];
 
   return (
-    <section className="bg-white py-[60px] flex flex-col items-center justify-center text-center">
+    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center justify-center text-center">
       <div className="max-w-[700px] mb-12">
         <h2 className="text-[28px] font-bold text-gray-700">
           Manage your entire community
@@ -47,18 +47,20 @@ export default function Community() {
         {items.map((item, index) => (
           <div
             key={index}
-            className="p-8 w-[300px] h-[270]"
+            className="bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl p-8 w-[300px] h-[270px] flex flex-col items-center"
           >
             <div className="flex justify-center mb-4">
               <img
                 src={item.image}
-                className="w-[65px] h-[56px] object-contain"
+                className="w-[60px] h-[52px] object-contain"
               />
             </div>
-            <h3 className="font-bold text-[20px] mb-2 text-gray-700 mx-auto text-center leading-snug">
+
+            <h3 className="font-bold text-[20px] mb-2 text-gray-700 text-center leading-snug">
               {item.title}
             </h3>
-            <p className="text-[13px] text-gray-600">
+
+            <p className="text-[13px] text-gray-600 text-center leading-relaxed">
               {item.desc}
             </p>
           </div>
