@@ -10,17 +10,13 @@ export default function Hero() {
           Where to grow your business as a photographer: site or social media?
         </p>
 
-        <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-sm">
+        <button className="bg-brand-primary hover:bg-green-700 text-white px-6 py-3 rounded-sm">
           Register
         </button>
       </div>
 
       <div className="mt-10 md:mt-0">
-        <img
-          src="/Illustration.png"
-          alt=""
-          className="w-[391px] h-[407px]"
-        />
+        <img src="/Illustration.png" alt="" className="w-[391px] h-[407px]"/>
       </div>
     </div>
   );
