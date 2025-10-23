@@ -1,6 +1,6 @@
 export default function Community() {
   return (
-    <section className="flex flex-col justify-center items-center px-[104px] py-[40px] bg-gray-50">
+    <section className="flex flex-col justify-center items-center px-[104px] py-[40px] bg-white">
         <div className="flex flex-col items-center text-center mb-10 w-[542px] h-[88px]">
             <h2 className="font-inter text-[36px] font-semibold text-neutral-dgrey leading-tight">Manage your entire community in a single system</h2>
             <p className="font-inter text-[16px] text-neutral-grey">Who is Nextcent suitable for?</p>
