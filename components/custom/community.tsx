@@ -44,7 +44,7 @@ export default function Community() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-center items-center gap-[127px]">
-        {items.map((item, index) => (
+        {items.map((item, index) =>  (
           <div
             key={index}
             className="bg-white shadow-md hover:shadow-lg transition-shadow rounded-2xl p-8 w-[300px] h-[270px] flex flex-col items-center"

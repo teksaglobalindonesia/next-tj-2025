@@ -23,7 +23,7 @@ export default function Achievement() {
   ];
 
   return (
-    <section className="bg-neutral-silver flex flex-col md:flex-row items-center justify-between px-[102px] py-[60px]">
+    <section className="bg-neutral-silver flex flex-col md:flex-row items-center justify-between px-[104px] py-[60px]">
       <div className="text-left md:w-1/2 mb-8 md:mb-0">
         <h2 className="text-[28px] md:text-[36px] font-semibold text-gray-700 leading-snug">
           Helping a local
