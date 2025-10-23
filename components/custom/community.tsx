@@ -60,8 +60,8 @@ export default function Community() {
               {item.title}
             </h3>
 
-            <p className="text-[13px] text-gray-600 text-center leading-relaxed">
-              {item.desc}
+            <p className="font-inter text-[14px] text-gray-600 text-center leading-snug">
+            {item.desc}
             </p>
           </div>
         ))}

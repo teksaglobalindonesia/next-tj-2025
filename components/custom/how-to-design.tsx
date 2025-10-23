@@ -23,7 +23,7 @@ export default function Howtodesign() {
           ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.
         </p>
 
-        <button className="px-3 py-1.5 w-[120px] h-[42px] bg-green-500 text-white rounded-md mt-2 font-medium text-[14px] hover:bg-green-600 transition">
+        <button className="px-3 py-1.5 w-[120px] h-[42px] bg-green-500 text-white rounded-md mt-2 font-medium text-[16px] hover:bg-green-600 transition">
           Learn More
         </button>
       </div>

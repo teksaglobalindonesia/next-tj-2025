@@ -45,10 +45,10 @@ export default function Achievement() {
               className="w-[48px] h-[48px] object-contain"
             />
             <div>
-              <h3 className="text-[18px] font-semibold text-gray-800">
+              <h3 className="text-[28px] font-semibold text-gray-800">
                 {stat.value}
               </h3>
-              <p className="text-[14px] text-gray-500">{stat.label}</p>
+              <p className="text-[16px] text-gray-500">{stat.label}</p>
             </div>
           </div>
         ))}
