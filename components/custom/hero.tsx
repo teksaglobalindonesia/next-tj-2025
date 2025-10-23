@@ -3,7 +3,7 @@ export default function Hero() {
     <div className="flex flex-row bg-neutral-silver h-[599px] px-[104px] items-center justify-between gap-[104px]">
       <div className="flex flex-col gap-4 max-w-[500px] text-center md:text-left">
         <div className="flex flex-col -translate-y-8">
-        <h1 className="text-[48px] font-bold text-gray-800 leading-tight">
+        <h1 className="text-[48px] font-bold text-gray-700 leading-tight">
          Lessons and insights
         </h1>
         <h1 className="text-[48px] font-bold text-brand-primary leading-tight">
