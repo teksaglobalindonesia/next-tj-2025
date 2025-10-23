@@ -2,7 +2,7 @@ export default function Clients() {
   return (
     <div className="flex flex-col justify-center items-center bg-white py-[40px] px-[104px]">
       <div className="flex flex-col items-center text-center gap-2 mb-10">
-        <h2 className="text-[36px] font-inter text-gray-800">
+        <h2 className="text-[36px] font-semibold text-neutral-dgrey">
           Our Clients
         </h2>
         <p className="text-gray-500 text-[16px]">
