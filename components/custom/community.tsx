@@ -32,10 +32,10 @@ export default function Community() {
   return (
     <section className="bg-white py-[60px] px-[104px] flex flex-col items-center justify-center text-center">
       <div className="max-w-[700px] mb-12">
-        <h2 className="text-[28px] font-bold text-gray-700">
+        <h2 className="text-[28px] font-semibold text-gray-700">
           Manage your entire community
         </h2>
-        <h2 className="text-[28px] font-bold text-gray-700">
+        <h2 className="text-[28px] font-semibold text-gray-700">
           in a single system
         </h2>
         <p className="text-[16px] text-gray-600">

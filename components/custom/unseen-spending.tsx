@@ -10,7 +10,7 @@ export default function Spending() {
       </div>
 
       <div className="p-6 rounded-md md:w-1/2 flex flex-col justify-center text-left">
-        <h2 className="text-[22px] md:text-[36px] font-bold text-gray-600 leading-snug mb-3">
+        <h2 className="text-[22px] md:text-[36px] font-semibold text-gray-600 leading-snug mb-3">
           The unseen of spending three <br /> years at Pixelgrade
         </h2>
 
