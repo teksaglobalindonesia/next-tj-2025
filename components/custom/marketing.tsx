@@ -14,8 +14,8 @@ export default function NewMarketing() {
             <img src="/marketing1-card.png" alt="" />
             <div className="w-[317px] items-center justify-center h-[176px] bg-neutral-silver shadow-xl rounded-lg p-[16px] gap-[16px] mx-[18px] mt-[-80px]">
                  <p className="font-inter text-[20px] text-center w-[285px] h-[84px] text-neutral-grey">Creating Streamlined Safeguarding Processes with OneRen</p>
-                 <div className="w-[285px] h-[44px] py-[16px]">
-                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px]">Readmore →</a>
+                 <div className="w-[290px] h-[44px] py-[16px]">
+                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px] transition-all duration-300 hover:text-shade-2 hover:text-[21px]">Readmore →</a>
                  </div>
             </div>
         </div>
@@ -23,8 +23,8 @@ export default function NewMarketing() {
             <img src="/marketing2-card.png" alt="" />
             <div className="w-[317px] items-center justify-center h-[176px] bg-neutral-silver shadow-xl rounded-lg p-[16px] gap-[16px] mx-[18px] mt-[-80px]">
                  <p className="font-inter text-[20px] text-center w-[285px] h-[84px] text-neutral-grey">What are your safeguarding responsibilities and how can you manage them?</p>
-                 <div className="w-[285px] h-[44px] py-[16px]">
-                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px]">Readmore →</a>
+                 <div className="w-[290px] h-[44px] py-[16px]">
+                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px] transition-all duration-300 hover:text-shade-2 hover:text-[21px]">Readmore →</a>
                  </div>
             </div>
         </div>
@@ -32,8 +32,8 @@ export default function NewMarketing() {
             <img src="/marketing3-card.png" alt="" />
             <div className="w-[317px] items-center justify-center h-[176px] bg-neutral-silver shadow-xl rounded-lg p-[16px] gap-[16px] mx-[18px] mt-[-80px]">
                  <p className="font-inter text-[20px] text-center w-[280px] h-[84px] text-neutral-grey">Revamping the Membership Model with Triathlon Australia</p>
-                 <div className="w-[285px] h-[44px] py-[16px]">
-                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px]">Readmore →</a>
+                 <div className="w-[290px] h-[44px] py-[16px]">
+                    <a href="" className="text-brand-primary font font-inter font-semibold text-[20px] text-center items-center px-[77px] transition-all duration-300 hover:text-shade-2 hover:text-[21px]">Readmore →</a>
                  </div>
             </div>
         </div>
