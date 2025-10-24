@@ -7,7 +7,7 @@ import Achievement from "../components/custom/achievement";
 import Howtodesign from "../components/custom/how-to-design";
 import Marketing from "../components/custom/new-marketing";
 import Ribbon from "../components/custom/ribbon";
-import Footer from "../components/custom/footer";
+import Footer from "../components/custom/footer"; 
 
 export default function Page() {
   return (
