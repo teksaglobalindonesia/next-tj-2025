@@ -21,7 +21,7 @@ export default function Marketing() {
       <div className="max-w-[700px] mb-12">
         <h2 className="text-[36px] font-semibold text-gray-700 mb-3">
           Caring is the new marketing
-        </h2>
+        </h2>  
         <p className="text-[16px] text-gray-500 leading-relaxed">
           The Nextcent blog is the best place to read about the latest membership insights,
           <br />
