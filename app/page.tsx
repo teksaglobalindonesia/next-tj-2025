@@ -6,6 +6,7 @@ import Spending from "../components/custom/unseen-spending";
 import Achievement from "../components/custom/achievement";
 import Design from "../components/custom/how-to-design";
 import Marketing from "../components/custom/new-marketing";
+import Ribbon from "../components/custom/ribbon";
 
 export default function Page() {
   return (
@@ -18,6 +19,7 @@ export default function Page() {
       <Achievement />
       <Design />
       <Marketing />
+      <Ribbon />
 
     </main>
     

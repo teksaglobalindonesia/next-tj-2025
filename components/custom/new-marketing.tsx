@@ -19,8 +19,7 @@ export default function Marketing() {
             </p>
             <a
               href="#"
-              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2 py-16"
-            >
+              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2 py-16">
               Readmore →
             </a>
           </div>
@@ -34,8 +33,7 @@ export default function Marketing() {
             </p>
             <a
               href="#"
-              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2"
-            >
+              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2">
               Readmore →
             </a>
           </div>
@@ -49,8 +47,7 @@ export default function Marketing() {
             </p>
             <a
               href="#"
-              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2"
-            >
+              className="text-brand-primary font-inter font-semibold w-[99px] h-[28px] text-center text-[20px] gap-2">
               Readmore →
             </a>
           </div>
