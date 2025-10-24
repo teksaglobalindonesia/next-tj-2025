@@ -30,7 +30,7 @@ export default function Community() {
   ];
 
   return (
-    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center justify-center text-center">
+    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center justify-center text-center mt-[48px]">
       <div className="max-w-[700px] mb-12">
         <h2 className="text-[28px] font-semibold text-gray-700">
           Manage your entire community

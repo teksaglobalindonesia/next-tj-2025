@@ -1,6 +1,6 @@
 export default function Howtodesign() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center gap-6 py-12 px-[104px] bg-white">
+    <section className="flex flex-col md:flex-row items-center justify-center gap-6 py-12 px-[104px] bg-white mt-[48px]">
       <div className="flex justify-center md:w-1/2">
         <img
           src="/design0.png"
