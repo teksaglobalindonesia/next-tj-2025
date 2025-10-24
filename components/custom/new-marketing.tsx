@@ -11,8 +11,7 @@ export default function Marketing() {
     },
     {
       image: "/marketing3.png",
-      title:
-        "Revamping the Membership Model with Triathlon Australia",
+      title: "Revamping the Membership Model with Triathlon Australia",
     },
   ];
 
@@ -21,11 +20,13 @@ export default function Marketing() {
       <div className="max-w-[700px] mb-12">
         <h2 className="text-[36px] font-semibold text-gray-700 mb-3">
           Caring is the new marketing
-        </h2>  
+        </h2>
         <p className="text-[16px] text-gray-500 leading-relaxed">
-          The Nextcent blog is the best place to read about the latest membership insights,
+          The Nextcent blog is the best place to read about the latest membership
+          insights,
           <br />
-          trends and more. See who’s joining the community, read about how our community
+          trends and more. See who’s joining the community, read about how our
+          community
           <br />
           are increasing their membership income and lot’s more.
         </p>
@@ -43,16 +44,16 @@ export default function Marketing() {
               className="w-[317px] h-[220px] object-cover rounded-xl"
             />
 
-            <div className="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 bg-white w-[285px] rounded-xl shadow-md p-4 flex flex-col items-center text-center">
+            <div className="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 bg-gray-200 w-[285px] rounded-xl shadow-md p-4 flex flex-col items-center text-center">
               <h3 className="text-[20px] font-semibold text-gray-500 leading-snug mb-2 line-clamp-3">
                 {blog.title}
               </h3>
-              <br />
+
               <a
                 href="#"
-                className="text-green-500 text-[20px] font-semibold flex items-center justify-center gap-1 hover:text-green-700 transition-colors"
+                className="text-green-500 text-[16px] font-semibold flex items-center justify-center gap-1 hover:text-green-700 transition-colors"
               >
-                Readmore →
+                Read more →
               </a>
             </div>
           </div>
