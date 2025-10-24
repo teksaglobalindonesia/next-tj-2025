@@ -16,7 +16,7 @@ export default function Marketing() {
   ];
 
   return (
-    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center text-center mt-[48px]">
+    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center text-center mt-[48px]"> 
       <div className="max-w-[700px] mb-12">
         <h2 className="text-[36px] font-semibold text-gray-700 mb-3">
           Caring is the new marketing
