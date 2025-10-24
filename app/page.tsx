@@ -4,10 +4,10 @@ import Client from "../components/custom/clients";
 import Community from "../components/custom/community";
 import Spending from "../components/custom/spending";
 import Achievement from "../components/custom/achievement";
-import Tutorial from "../components/custom/tutorial"
-import NewMarketing from "@/components/custom/marketing";
-import Ribbon from "@/components/custom/ribbon";
-import Footer from "@/components/custom/footer";
+import Tutorial from "../components/custom/tutorial";
+import NewMarketing from "../components/custom/marketing";
+import Ribbon from "../components/custom/ribbon";
+import Footer from "../components/custom/footer";
 
 export default function Page() {
   return (
