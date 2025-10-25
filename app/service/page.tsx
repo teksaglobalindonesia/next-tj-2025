@@ -1,5 +1,6 @@
 import Header from "../../components/custom/header";
 import Simple from "../../components/custom/simple-hero";
+import Servicelist from "../../components/custom/service-list";
 
 
 export default function Page() {
@@ -7,6 +8,7 @@ export default function Page() {
     <main>
       <Header />
       <Simple />
+      <Servicelist />
 
     </main>
     
