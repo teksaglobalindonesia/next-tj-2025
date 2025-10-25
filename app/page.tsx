@@ -7,6 +7,7 @@ import Achievement from "../components/custom/achievement";
 import Design from "../components/custom/how-to-design";
 import Marketing from "../components/custom/new-marketing";
 import Ribbon from "../components/custom/ribbon";
+import Footer from "../components/custom/footer";
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
       <Design />
       <Marketing />
       <Ribbon />
+      <Footer />
 
     </main>
     

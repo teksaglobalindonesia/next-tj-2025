@@ -1,6 +1,6 @@
 export default function Ribbon() {
     return (
-        <section className="flex flex-col items-center justify-center px-[104px] py-[106px] bg-neutral-silver">
+        <section className="flex flex-col items-center justify-center px-[104px] py-[48px] mt-[112px] bg-neutral-silver">
             <h2 className="text-[64px] text-neutral-black font-inte font-semibold text-center w-[850px] h-[146px] mb-14 leading-tight">
                 Pellentesque suscipit fringilla libero eu.
             </h2>
