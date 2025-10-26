@@ -6,9 +6,9 @@ export default function Servicelist() {
           <img
             src="/service1.png"
             alt="Service 1 Illustration"
-            className="w-[433px] md:w-[368px] h-auto object-contain"
+            className="w-[433px] md:w-[368px] h-auto object -contain"
           />
-        </div>
+        </div>  
 
         <div className="p-6 rounded-md md:w-1/2 flex flex-col justify-center text-left">
           <h2 className="text-[22px] md:text-[36px] font-semibold text-[#4D4D4D] leading-snug mb-3">
