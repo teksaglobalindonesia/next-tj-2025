@@ -6,7 +6,7 @@ export default function Marketing() {
           Caring is the new marketing
         </h2>
         <p className="text-[16px] text-neutral-grey w-[600px] mx-auto">
-          The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​
+          The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&apos;s joining the community, read about how our community are increasing their membership income and lot&apos;s more.​
         </p>
       </div>
 
