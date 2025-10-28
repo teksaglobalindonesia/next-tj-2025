@@ -13,7 +13,7 @@ export default function Marketing() {
       <div className="flex flex-row justify-between gap-[24px] mt-[-25px]">
         <div className="relative flex flex-col items-center w-[368px] h-[366px]">
           <img src="/marketing1.png" alt="" className="w-[368px] h-[286px] object-cover rounded-lg"/>
-          <div className="absolute -bottom-[45px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
+          <div className="absolute -bottom-[24px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
             <p className="text-[20px] text-neutral-grey font-inter font-semibold w-[288px] h-[86px] mb-7">
               Creating Streamlined Safeguarding Processes with OneRen
             </p>
@@ -27,7 +27,7 @@ export default function Marketing() {
 
         <div className="relative flex flex-col items-center w-[368px] h-[366px]">
           <img src="/marketing2.png" alt="" className="w-[368px] h-[286px] object-cover rounded-lg"/>
-          <div className="absolute -bottom-[45px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
+          <div className="absolute -bottom-[24px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
             <p className="text-[20px] text-neutral-grey font-inter font-semibold w-[285px] h-[84px] mb-7">
               What are your safeguarding responsibilities and how can you manage them?
             </p>
@@ -41,7 +41,7 @@ export default function Marketing() {
 
         <div className="relative flex flex-col items-center w-[368px] h-[366px]">
           <img src="/marketing3.png" alt="" className="w-[368px] h-[286px] object-cover rounded-lg"/>
-          <div className="absolute -bottom-[45px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
+          <div className="absolute -bottom-[24px] bg-neutral-silver shadow-lg w-[317px] h-[176px] rounded-lg text-center p-5">
             <p className="text-[20px] text-neutral-grey font-inter font-semibold w-[285px] h-[84px] mb-7">
               Revamping the Membership Model with Triathlon Australia
             </p>
