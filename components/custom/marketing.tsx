@@ -4,7 +4,7 @@ export default function NewMarketing() {
       <div className="flex flex-col items-center text-center gap-2 mb-10">
         <h2 className="text-[36px] font-inter font-semibold text-neutral-dgrey">Caring is the new marketing</h2>
         <p className="text-neutral-grey text-center items-center text-[16px] font-inter w-[628px] h-[72px]">
-          The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​
+          The Nexcent blog is the best place to read about the latest membership insights, trends and more. See who&apos;s joining the community, read about how our community are increasing their membership income and lot&apos;s more.​
         </p>
       </div>
 

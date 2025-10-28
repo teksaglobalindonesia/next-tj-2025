@@ -12,12 +12,19 @@ const robotoFont = Roboto({
 });
 
 const interFont = Inter({
-  subsets: ['latin'],
-  weight: ['300', '500', '700'],
-  variable: '--font-inter'
+  subsets: ['latin'],
+  weight: ['300', '500', '700'],
+  variable: '--font-inter'
 });
-export default async function RootLayout({
-  children
+
+export const metadata = {
+  title: 'Website 4thaaa',
+  description: 'Website landing page responsive with Next.js',
+  viewport: 'width=device-width, initial-scale=1.0',
+};
+
+export default function RootLayout({
+  children,
 }: {
   children: React.ReactNode;
 }) {

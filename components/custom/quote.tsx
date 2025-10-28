@@ -16,7 +16,7 @@ export default function Quote() {
                <img src="client5.png" alt="" className="w-[48px] h-[48px]"/>
                <img src="client6.png" alt="" className="w-[48px] h-[48px]"/>
             </div>
-             <a href="" className="w-[233px] h-[44px] p-[8px] gap-[8px] font-inter text-brand-primary font-semibold text-[20px]">Meet all customers →</a>
+             <a href="" className="w-[235px] h-[44px] p-[8px] gap-[8px] font-inter text-brand-primary font-semibold text-[20px] transition-all duration-300 hover:text-shade-2 hover:text-[20.2px]">Meet all customers →</a>
             </div>
          </div>
        </div>
