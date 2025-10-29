@@ -17,24 +17,26 @@ export default function Header() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
+  const navItems = ["Home", "Service", "Feature", "Products", "Testimonial", "FAQ"];
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
-        ${isScrolled ? "bg-neutral-silver shadow-md" : "bg-neutral-silver shadow-none"}
-      `}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-neutral-silver shadow-md" : "bg-neutral-silver shadow-none"
+      }`}
     >
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-10 lg:px-20 h-16 md:h-[84px]">
         {/* Logo */}
         <img
           src="/Logo.png"
+          alt="Logo"
           className="w-28 md:w-[154px] h-auto cursor-pointer"
           onClick={scrollToTop}
-          alt="Logo"
         />
 
         {/* Navigation (desktop) */}
         <nav className="hidden md:flex flex-row flex-1 justify-center items-center gap-6 lg:gap-8">
-          {["Home", "Service", "Feature", "Products", "Testimonial", "FAQ"].map((item, idx) => (
+          {navItems.map((item, idx) => (
             <Link
               key={idx}
               href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -64,17 +66,17 @@ export default function Header() {
             className={`block w-6 h-[2px] bg-gray-800 transition-all duration-300 ${
               menuOpen ? "rotate-45 translate-y-[6px]" : ""
             }`}
-          ></span>
+          />
           <span
             className={`block w-6 h-[2px] bg-gray-800 transition-all duration-300 ${
               menuOpen ? "opacity-0" : ""
             }`}
-          ></span>
+          />
           <span
             className={`block w-6 h-[2px] bg-gray-800 transition-all duration-300 ${
               menuOpen ? "-rotate-45 -translate-y-[6px]" : ""
             }`}
-          ></span>
+          />
         </button>
       </div>
 
@@ -85,7 +87,7 @@ export default function Header() {
         }`}
       >
         <nav className="flex flex-col items-center py-4 space-y-4">
-          {["Home", "Service", "Feature", "Products", "Testimonial", "FAQ"].map((item, idx) => (
+          {navItems.map((item, idx) => (
             <Link
               key={idx}
               href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
