@@ -38,7 +38,7 @@ export default function Header() {
       <div className="flex flex-row flex-1 justify-center items-center gap-8">
         <p>
           <Link href="/" className="font-inter text-[16px] hover:text-brand-primary transition-colors duration-200">
-            Home
+            Homeless
           </Link>
         </p>
 
