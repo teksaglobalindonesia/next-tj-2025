@@ -8,37 +8,41 @@ export default function Clients() {
     gsap.registerPlugin(ScrollTrigger);
 
     const ctx = gsap.context(() => {
-      gsap.from(".clients-text", {
-        y: 50,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.3,
+      const tl = gsap.timeline({
+        defaults: { ease: "power3.out" },
         scrollTrigger: {
           trigger: ".clients-section",
           start: "top 80%",
-          end: "top 20%",
-          toggleActions: "play none none reverse",
+          end: "bottom 20%", 
+          toggleActions: "play reverse play reverse",
+          scrub: false,
         },
+      });
+
+      tl.from(".clients-text", {
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.2,
       });
 
       const logos = gsap.utils.toArray(".client-logo");
       gsap.set(logos, { opacity: 0, scale: 0, transformOrigin: "center center" });
 
-      gsap.to(logos, {
-        opacity: 1,
-        scale: 1,
-        duration: 1.2,
-        ease: "elastic.out(1, 0.5)",
-        stagger: {
+      tl.to(
+        logos,
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "elastic.out(1, 0.5)",
+          stagger: {
           each: 0.15,
           from: "center",
+          },
         },
-        scrollTrigger: {
-          trigger: ".clients-section",
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-        },
-      });
+        "-=0.3"
+      );
     });
 
     return () => ctx.revert();
