@@ -1,8 +1,41 @@
-'use client';
-
-import { motion } from "framer-motion";
+"use client";
+import { useLayoutEffect } from "react";
+import { gsap } from "gsap";
 
 export default function Clients() {
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      tl.from(".clients-text", {
+        y: 50,
+        opacity: 0,
+        duration: 0.8,
+        stagger: 0.3,
+      });
+
+      const logos = gsap.utils.toArray(".client-logo");
+      gsap.set(logos, { opacity: 0, scale: 0 });
+
+      tl.to(
+        logos,
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.2,
+          ease: "elastic.out(1, 0.5)", 
+          stagger: {
+            each: 0.15,
+            from: "center", 
+          },
+        },
+        "-=0.3"
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   const clients = [
     "/our7.png",
     "/our1.png",
@@ -14,47 +47,23 @@ export default function Clients() {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white py-10 px-6 md:px-[104px] mt-12">
-      
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center mb-10"
-      >
-        <h2 className="text-2xl md:text-[28px] font-semibold text-gray-700">
+    <div className="flex flex-col justify-center items-center bg-white py-[40px] px-[104px]">
+      <div className="flex flex-col items-center text-center gap-2 mb-10">
+        <h2 className="clients-text text-[36px] font-semibold text-neutral-dgrey">
           Our Clients
         </h2>
-        <p className="text-gray-600 text-sm md:text-[16px] mt-2">
+        <p className="clients-text text-gray-500 text-[16px]">
           We have been working with some Fortune 500+ clients
         </p>
-      </motion.div>
+      </div>
 
-      <motion.div
-        className="flex flex-row flex-wrap justify-center items-center gap-8 md:gap-[120px]"
-        initial="hidden"
-        animate="visible"
-        variants={{
-          hidden: {},
-          visible: { transition: { staggerChildren: 0.15 } },
-        }}
-      >
+      <div className="flex justify-between items-center flex-wrap w-full gap-16">
         {clients.map((src, i) => (
-          <motion.img
-            key={i}
-            src={src}
-            alt={`Client ${i + 1}`}
-            className="w-[45px] h-auto object-contain cursor-pointer"
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            whileHover={{ scale: 1.2, y: -5 }}
-            transition={{ type: "spring", stiffness: 120 }}
-          />
+          <div key={i} className="w-[48px] h-[48px] flex items-center justify-center">
+            <img src={src} alt={`client ${i + 1}`} className="max-w-full max-h-full object-contain" />
+          </div>
         ))}
-      </motion.div>
+      </div>
     </div>
   );
 }
-
