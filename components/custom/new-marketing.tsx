@@ -16,42 +16,40 @@ export default function Marketing() {
   ];
 
   return (
-    <section className="bg-white py-[60px] px-[104px] flex flex-col items-center text-center mt-[48px]"> 
-      <div className="max-w-[700px] mb-12">
-        <h2 className="text-[36px] font-semibold text-gray-700 mb-3">
+    <section className="bg-white py-12 px-4 sm:px-6 md:px-[104px] flex flex-col items-center text-center mt-[48px]">
+      <div className="max-w-full sm:max-w-[700px] mb-12">
+        <h2 className="text-[28px] sm:text-[32px] md:text-[36px] font-semibold text-gray-700 mb-3">
           Caring is the new marketing
         </h2>
-        <p className="text-[16px] text-gray-500 leading-relaxed">
+        <p className="text-[14px] sm:text-[15px] md:text-[16px] text-gray-500 leading-relaxed">
           The Nextcent blog is the best place to read about the latest membership
           insights,
-          <br />
+          <br className="hidden sm:block" />
           trends and more. See who’s joining the community, read about how our
           community
-          <br />
+          <br className="hidden sm:block" />
           are increasing their membership income and lot’s more.
         </p>
       </div>
 
-      <div className="flex flex-col mt-[-25px] md:flex-row justify-center items-center gap-[40px]">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-[40px] mt-[-20px]">
         {blogs.map((blog, index) => (
           <div
             key={index}
-            className="relative w-[317px] flex flex-col items-center"
+            className="relative w-full sm:w-[280px] md:w-[317px] flex flex-col items-center mb-16 md:mb-0"
           >
             <img
               src={blog.image}
               alt={blog.title}
-              className="w-[317px] h-[220px] object-cover rounded-xl"
+              className="w-full h-[180px] sm:h-[200px] md:h-[220px] object-cover rounded-xl"
             />
-
-            <div className="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2 bg-gray-200 w-[285px] rounded-xl shadow-md p-4 flex flex-col items-center text-center">
-              <h3 className="text-[20px] font-semibold text-gray-500 leading-snug mb-2 line-clamp-3">
+            <div className="absolute bottom-[-50px] left-1/2 transform -translate-x-1/2 bg-gray-200 w-[90%] sm:w-[260px] md:w-[285px] rounded-xl shadow-md p-4 flex flex-col items-center text-center">
+              <h3 className="text-[16px] sm:text-[18px] md:text-[20px] font-semibold text-gray-500 leading-snug mb-2 line-clamp-3">
                 {blog.title}
               </h3>
-
               <a
                 href="#"
-                className="text-green-500 text-[16px] font-semibold flex items-center justify-center gap-1 hover:text-green-700 transition-colors"
+                className="text-green-500 text-[14px] sm:text-[15px] md:text-[16px] font-semibold flex items-center justify-center gap-1 hover:text-green-700 transition-colors"
               >
                 Read more →
               </a>
