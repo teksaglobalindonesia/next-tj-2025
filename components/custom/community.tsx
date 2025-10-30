@@ -7,38 +7,52 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Community() {
 
   useEffect(() => {
+    const initAnimation = () => {
+      gsap.set(".card-community", { opacity: 1, rotate: 0 });
+
       gsap.from(".card-community", {
         rotate: 20,
         opacity: 0,
         duration: 1,
-        stagger: 0.5,
+        stagger: 0.3,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".card-community",
-          start: "top 80%",
-          end: "top 30%",
-          scrub: true
-        }
-      }),
+          start: "top 95%",
+          scrub: false,
+          once: true, 
+          markers: true,
+        },
+      });
+
       gsap.from(".community-text", {
         y: 50,
         opacity: 0,
-        stagger: 0.3,
-        duration: 1,
+        duration: 0.5,
+        stagger: 0.2,
         ease: "power2.out",
         scrollTrigger: {
           trigger: ".community-text",
-          start: "top 80%",
-          end: "top 30%",
-          scrub: true
-        }
-      })
+          start: "top 90%",
+          toggleActions: "play none none none",
+          once: true,
+          markers: true,
+        },
+      });
 
-  const timeout = setTimeout(() => {
-    ScrollTrigger.refresh();
-  }, 500);
+      ScrollTrigger.refresh();
+    };
 
-  return () => clearTimeout(timeout);
+    if (document.readyState === "complete") {
+      initAnimation();
+    } else {
+      window.addEventListener("load", initAnimation);
+    }
+
+    return () => {
+      window.removeEventListener("load", initAnimation);
+      ScrollTrigger.getAll().forEach((t) => t.kill());
+    };
   }, []);
 
   return (
@@ -56,9 +70,7 @@ export default function Community() {
         <p className="community-text font-inter text-sm sm:text-base md:text-[16px] text-neutral-grey mt-2">
           Who is Nextcent suitable for?
         </p>
-      </div>
-
-      {/* Card Container */}
+      </div>                                                     
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 
                    gap-8 sm:gap-10 lg:gap-[80px] xl:gap-[127px] 
