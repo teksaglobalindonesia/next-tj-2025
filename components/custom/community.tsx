@@ -1,30 +1,43 @@
 "use client";
-import { useLayoutEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Community() {
-  useLayoutEffect(() => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline(); 
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".community-section", 
+          start: "top 80%", 
+          end: "bottom 20%",
+          toggleActions: "play none none reverse", 
+        },
+        defaults: { ease: "power2.inOut" },
+      });
 
       tl.to(".community-card", {
-        rotation: 15, 
+        rotation: 15,
         duration: 1.2,
         ease: "power2.inOut",
-        stagger: 0.2, 
+        stagger: 0.2,
       }).to(".community-card", {
-        rotation: 0, 
+        rotation: 0,
         duration: 1.2,
         ease: "power2.inOut",
         stagger: 0.2,
       });
+
+      ScrollTrigger.refresh(); 
     });
 
     return () => ctx.revert();
   }, []);
 
   return (
-    <section className="flex flex-col items-center justify-center bg-white py-[40px] px-6 md:px-[144px]">
+    <section className="community-section flex flex-col items-center justify-center bg-white py-[40px] px-6 md:px-[144px]">
       <div className="text-center mb-10 max-w-[600px]">
         <h2 className="text-[24px] sm:text-[30px] md:text-[36px] font-semibold text-neutral-dgrey leading-snug">
           Manage your entire community in a single system
