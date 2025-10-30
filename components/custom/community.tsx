@@ -1,4 +1,46 @@
+"use client";
+import { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Community() {
+
+  useEffect(() => {
+      gsap.from(".card-community", {
+        rotate: 20,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.5,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".card-community",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true
+        }
+      }),
+      gsap.from(".community-text", {
+        y: 50,
+        opacity: 0,
+        stagger: 0.3,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".community-text",
+          start: "top 80%",
+          end: "top 30%",
+          scrub: true
+        }
+      })
+
+  const timeout = setTimeout(() => {
+    ScrollTrigger.refresh();
+  }, 500);
+
+  return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <section
       className="flex flex-col justify-center items-center 
@@ -8,10 +50,10 @@ export default function Community() {
     >
       {/* Title */}
       <div className="flex flex-col items-center mb-10 max-w-xl">
-        <h2 className="font-inter text-2xl sm:text-3xl md:text-[36px] font-semibold text-neutral-dgrey leading-snug sm:leading-tight">
+        <h2 className="community-text font-inter text-2xl sm:text-3xl md:text-[36px] font-semibold text-neutral-dgrey leading-snug sm:leading-tight">
           Manage your entire community in a single system
         </h2>
-        <p className="font-inter text-sm sm:text-base md:text-[16px] text-neutral-grey mt-2">
+        <p className="community-text font-inter text-sm sm:text-base md:text-[16px] text-neutral-grey mt-2">
           Who is Nextcent suitable for?
         </p>
       </div>
@@ -23,7 +65,7 @@ export default function Community() {
                    w-full max-w-6xl"
       >
         {/* card 1 */}
-        <div className="flex flex-col items-center bg-white 
+        <div className="card-community flex flex-col items-center bg-white 
                         w-full max-w-[299px] mx-auto 
                         rounded-2xl shadow-md px-6 pt-6 pb-6 
                         transition-all duration-300 
@@ -38,7 +80,7 @@ export default function Community() {
         </div>
 
         {/* card 2 */}
-        <div className="flex flex-col items-center bg-white 
+        <div className="card-community flex flex-col items-center bg-white 
                         w-full max-w-[299px] mx-auto 
                         rounded-2xl shadow-md px-6 pt-6 pb-6 
                         transition-all duration-300 
@@ -53,7 +95,7 @@ export default function Community() {
         </div>
 
         {/* card 3 */}
-        <div className="flex flex-col items-center bg-white 
+        <div className="card-community flex flex-col items-center bg-white 
                         w-full max-w-[299px] mx-auto 
                         rounded-2xl shadow-md px-6 pt-6 pb-6 
                         transition-all duration-300 

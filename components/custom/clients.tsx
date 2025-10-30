@@ -54,7 +54,7 @@ export default function ClientsSection() {
   }, []);
 
   return (
-    <section className="client-section flex flex-col items-center justify-center bg-white px-6 py-16">
+    <section className="client-section flex flex-col items-center justify-center bg-white px-6 py-16 ">
       {/* Title */}
       <div className="text-center mb-10">
         <h2 className="client-text text-3xl sm:text-4xl font-semibold text-gray-800 mb-2">
