@@ -7,7 +7,6 @@ export default function Clients() {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-      // ✨ Animasi teks muncul dari bawah satu per satu
       tl.from(".clients-text", {
         y: 50,
         opacity: 0,
@@ -15,9 +14,7 @@ export default function Clients() {
         stagger: 0.3,
       });
 
-      // 💥 Animasi gambar muncul dari kecil ke besar (efek gelombang/pluffy)
       const logos = gsap.utils.toArray(".client-logo");
-
       gsap.set(logos, { opacity: 0, scale: 0 });
 
       tl.to(
@@ -26,10 +23,10 @@ export default function Clients() {
           opacity: 1,
           scale: 1,
           duration: 1.2,
-          ease: "elastic.out(1, 0.5)", // efek meledak lembut/pluffy
+          ease: "elastic.out(1, 0.5)", 
           stagger: {
             each: 0.15,
-            from: "center", // mulai dari tengah, nyebar kiri-kanan
+            from: "center", 
           },
         },
         "-=0.3"
