@@ -18,7 +18,7 @@ export default function Spending() {
           start: "top 70%",
           scrub: false,
           once: true, 
-          markers: true,
+
       }
     }),
 
@@ -33,7 +33,7 @@ export default function Spending() {
           start: "top 70%",
           scrub: false,
           once: true, 
-          markers: true,
+
       }
     }),
     
@@ -47,7 +47,7 @@ export default function Spending() {
           start: "top 75%",
           scrub: false,
           once: true, 
-          markers: true,
+
       }
     })
   }, []);

@@ -21,7 +21,6 @@ export default function Community() {
           start: "top 95%",
           scrub: false,
           once: true, 
-          markers: true,
         },
       });
 
@@ -36,7 +35,7 @@ export default function Community() {
           start: "top 90%",
           toggleActions: "play none none none",
           once: true,
-          markers: true,
+
         },
       });
 
