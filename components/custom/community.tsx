@@ -35,11 +35,10 @@ export default function Community() {
 
   return (
     <section className="bg-white py-[60px] px-6 md:px-[104px] flex flex-col items-center justify-center text-center mt-[48px] overflow-hidden">
-      
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 0, y: 40, rotate: -3 }}
+        animate={{ opacity: 1, y: 0, rotate: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         className="max-w-[700px] mb-12"
       >
         <h2 className="text-[24px] md:text-[28px] font-semibold text-gray-700">
@@ -59,7 +58,7 @@ export default function Community() {
         animate="visible"
         variants={{
           hidden: {},
-          visible: { transition: { staggerChildren: 0.25 } },
+          visible: { transition: { staggerChildren: 0.3 } },
         }}
       >
         {items.map((item, index) => (
@@ -67,20 +66,23 @@ export default function Community() {
             key={index}
             className="bg-white shadow-md rounded-2xl p-8 w-[280px] md:w-[300px] h-[260px] flex flex-col items-center justify-start cursor-pointer"
             variants={{
-              hidden: { opacity: 0, y: 40, scale: 0.9 },
-              visible: { opacity: 1, y: 0, scale: 1 },
+              hidden: { opacity: 0, y: 50, rotate: index % 2 === 0 ? -8 : 8, scale: 0.9 },
+              visible: { opacity: 1, y: 0, rotate: 0, scale: 1 },
             }}
-            transition={{ type: "spring", stiffness: 120, damping: 10 }}
+            transition={{ type: "spring", stiffness: 100, damping: 10 }}
             whileHover={{
-              scale: 1.05,
-              boxShadow: "0px 12px 30px rgba(0, 0, 0, 0.12)",
-              y: -5,
+              scale: 1.07,
+              rotate: index % 2 === 0 ? 3 : -3,
+              boxShadow: "0px 12px 30px rgba(0, 0, 0, 0.15)",
             }}
           >
             <motion.div
-              animate={{ y: [0, -6, 0] }}
+              animate={{
+                y: [0, -8, 0],
+                rotate: [0, 10, -10, 0],
+              }}
               transition={{
-                duration: 3,
+                duration: 5,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
